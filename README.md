@@ -1,26 +1,27 @@
-# Personal portfolio
+﻿# Benjamin's portfolio
 
-A minimal, responsive portfolio built with plain HTML, CSS, and a tiny bit of JavaScript. No install or build step is required.
+A short, text-focused personal page. Plain HTML and CSS, with no dependencies or JavaScript.
 
 ## Preview
 
-Open `index.html` in your browser, or run `python -m http.server 8000` in this folder and visit `http://localhost:8000`.
+Open `index.html` in a browser, or run `python -m http.server 8000` and visit `http://localhost:8000`.
 
-## Make it yours
+## Contact links
 
-Edit `index.html` to replace the clearly labeled sample content:
+In `index.html`, replace each of the three `pending-link` spans with a link to your email, LinkedIn, or new GitHub account. For example:
 
-- Update your name in the page title, introduction, footer, and navigation wordmark.
-- Write a headline and short introduction tailored to the roles you want.
-- Replace both sample projects with your own descriptions, role, dates, screenshots, and links. The current artwork is decorative CSS, not screenshots of real projects.
-- Replace the about text and skill labels with your background and strengths.
-- Replace the contact placeholder with your email link using the example HTML comment. Add LinkedIn and a résumé link when available.
-- Update the page description and `favicon.svg` to suit your identity.
+```html
+<li><a href="mailto:you@example.com">email</a></li>
+<li><a href="https://www.linkedin.com/in/your-profile/">linkedin</a></li>
+<li><a href="https://github.com/your-new-account">github</a></li>
+```
 
-Colors, typography, and responsive layouts live in `styles.css`. Google Fonts are optional; system fonts work when offline. The only JavaScript updates the copyright year. Navigation and project disclosures work without it.
+Until you add them, these labels are plain text rather than broken links. The note about your new GitHub account is directly below them.
 
-For static hosts that expect a build folder, run `node build.mjs` to copy the site into `dist/`. `.openai/hosting.json` records the private Sites deployment identity; GitHub Pages serves the root files directly.
+## Résumé
 
-## GitHub Pages
+The résumé link opens `resume.pdf` in a new tab. Replace that file whenever you update your résumé, keeping the same filename so the link continues to work.
 
-These files can be served directly from the repository root. Once you are ready, push them and configure the repository’s GitHub Pages source to use the branch containing the site and the `/ (root)` folder. No generated files or package manager are needed.
+## Hosting
+
+GitHub Pages can serve these files directly from the repository root. `node build.mjs` copies the page, stylesheet, favicon, and PDF into `dist/` for static hosts. `.openai/hosting.json` preserves the existing private Sites deployment identity.
