@@ -1,4 +1,4 @@
-﻿# Benjamin's portfolio
+﻿# Yoonho's portfolio
 
 A short, text-focused personal page. Plain HTML and CSS, with no dependencies or JavaScript.
 
